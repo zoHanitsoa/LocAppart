@@ -1,0 +1,46 @@
+.grid {
+    background-color: rgba(0, 0, 0, 0.119);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+}
+.grid a {
+    text-decoration: none;
+    width: 30%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+@media screen and (width <= 768px) {
+    .grid {
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+        place-items: center;
+        margin-bottom: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .grid a {
+        width: 100%;
+        }
+     .grid .apartment_image {
+        width: 100%;
+        margin-inline: auto;
+        position: relative;
+    }
+    .apartment {
+        width: 600px;
+    }
+}
+@media screen and (width <= 425px) {
+    .grid .apartment_image{
+        height: 224px;
+    }
+    .grid a{
+        height: 50%;
+    }
+    
+}

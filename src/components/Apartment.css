@@ -1,0 +1,59 @@
+.apartment {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.apartment_subtitle {
+    width: 50%;
+    margin-inline-start: 0.5rem;
+    margin-block-start: 0.5rem;
+    color: white;
+    height: 100px;
+    text-decoration: none;
+}
+.apartment_image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.title {
+    position: absolute;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 52px;
+    color: white;
+    z-index: 2;
+    bottom: 20px;
+    padding-right: 20px;
+}
+.apartment a{
+    text-decoration: none;
+    
+}
+.apartment .backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+@media screen and (width <= 768px) {
+    .apartment {
+        position: relative;
+        width: 100%;
+        margin-inline: auto;
+    }
+}
+@media screen and (width <= 425px) {
+    .apartment_image .title {
+        position: absolute;
+        left: 13px;
+        top: 179px;
+        width: 197px;
+        font-size: 14px;
+    }
+    .apartment {
+        height: 66px,
+    }
+}
